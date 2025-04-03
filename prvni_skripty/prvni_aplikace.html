@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Calculated examples:</title>
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            // řetězec, který chceme dekódovat
+            let sifrovanaZprava = ".-.. . --- -. .- .-. -.. ---";
+
+            // řetězec s dekódovanou zprávou
+            let dekodovanaZprava = "";
+
+            let abeceda = "abcdefghijklmnopqrstuvwxyz";
+            let morseovyZnaky = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
+            "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
+            "...-", ".--", "-..-", "-.--", "--.."];
+
+            let znaky = sifrovanaZprava.split(" ")
+            for (let morseuvZnak of znaky) {
+                let abecedniZnak = "?";
+                let index = morseovyZnaky.indexOf(morseuvZnak);
+                if (index >= 0) {
+                    abecedniZnak = abeceda.charAt(index);
+                }
+                dekodovanaZprava += abecedniZnak;
+            }
+            document.write("Původní zpráva: " + sifrovanaZprava + "<br>");
+            document.write("Dekódovaná zpráva: " + dekodovanaZprava + "<br>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zkrácení textu</title>
+</head>
+<body>
+    <script>
+        let text = prompt("Zadejte text:");
+        let delka = parseInt(prompt("Zadejte požadovanou délku textu:"));
+        function zkracovac(text, delka) {
+            if (text.length > delka) {
+                return text.slice(0, delka - 3) + "...";
+            }
+            return text;    
+        }
+        document.write("Původní text: " + text + "<br />");
+        let zkracenyText = zkracovac(text, delka);
+        document.write("Zkrácený text: " + zkracenyText);
+    </script>
+</body>
+</html>

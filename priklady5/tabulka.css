@@ -1,0 +1,140 @@
+﻿table {
+	border-radius:7px;
+	border-collapse:collapse;
+	table-layout:auto;
+	width:600px;
+}
+table td, table th {
+	padding:5px;
+	font-family:Calibri;
+}
+table thead, table tfoot {
+	background-color:rgb(155, 187, 89);
+	color:white;
+	text-align:left;
+	font-family:Calibri;
+}
+table.blue thead, table.blue tfoot {
+	background-color:rgb(78,129,189); /*Tmavá*/
+}
+table.red thead, table.red tfoot {
+	background-color:rgb(192,80,77);
+}
+table.violet thead, table.violet tfoot {
+	background-color:rgb(128,100,162);
+}
+table.turquoise thead, table.turquoise tfoot {
+	background-color:rgb(75,172,198);
+}
+table.black thead, table.black tfoot {
+	background-color:black;
+}
+table.orange thead, table.orange tfoot {
+	background-color:rgb(247, 150, 70);
+}
+
+table tbody tr:nth-child(2n+1) {
+	background-color:white;
+}
+table tbody tr:nth-child(2n) {
+	background-color:rgb(235, 241, 222); /*Světlá*/
+}
+table.blue tbody tr:nth-child(2n) {
+	background-color:rgb(220,230,241);
+}
+table.red tbody tr:nth-child(2n) {
+	background-color:rgb(242,220,219);
+}
+table.violet tbody tr:nth-child(2n) {
+	background-color:rgb(228,223,236);
+}
+table.turquoise tbody tr:nth-child(2n) {
+	background-color:rgb(218,238,243);
+}
+table.black tbody tr:nth-child(2n) {
+	background-color:grey;
+}
+table.orange tbody tr:nth-child(2n) {
+	background-color:rgb(253,253,217);
+}
+
+table[data-first-column='true'] tr td:first-child, table[data-last-column='true'] tr td:last-child {
+	background-color:rgb(155, 187, 89); /*tmavá*/
+	font-weight:bold;
+}
+table.blue[data-first-column='true'] tr td:first-child, table.blue[data-last-column='true'] tr td:last-child {
+	background-color:rgb(78,129,189);
+}
+table.red[data-first-column='true'] tr td:first-child, table.red[data-last-column='true'] tr td:last-child {
+	background-color:rgb(192,80,77);
+}
+table.violet[data-first-column='true'] tr td:first-child, table.violet[data-last-column='true'] tr td:last-child {
+	background-color:rgb(128,100,162);
+}
+table.turquoise[data-first-column='true'] tr td:first-child, table.turquoise[data-last-column='true'] tr td:last-child {
+	background-color:rgb(75,172,198);
+}
+table.black[data-first-column='true'] tr td:first-child, table.black[data-last-column='true'] tr td:last-child {
+	background-color:black;
+	color:white;
+}
+table.orange[data-first-column='true'] tr td:first-child, table.orange[data-last-column='true'] tr td:last-child {
+	background-color:rgb(247, 150, 70);
+	color:white;
+}
+
+table caption {
+	background-color:rgb(155, 187, 89);
+	font-family:Calibri;
+	padding:2px 0;
+	font-weight:bold;
+	font-size:115%;
+	border-bottom:1px solid white;
+}
+table.blue caption {
+	background-color:rgb(78,129,189); /*Tmavá*/
+}
+table.red caption {
+	background-color:rgb(192,80,77);
+}
+table.violet caption {
+	background-color:rgb(128,100,162);
+}
+table.turquoise caption {
+	background-color:rgb(75,172,198);
+}
+table.orange caption {
+	background-color:rgb(247, 150, 70);
+}
+table.black caption {
+	color:white;
+	background-color:black;
+}
+table caption a {
+	color:white;
+	text-decoration:none;
+}
+table.black caption a {
+	color:gray;
+}
+table caption a:hover {
+	color:rgb(235, 241, 222);
+}
+table.blue caption a:hover {
+	color:rgb(220,230,241);
+}
+table.red caption a:hover {
+	color:rgb(242,220,219);
+}
+table.violet caption a:hover {
+	color:rgb(228,223,236);
+}
+table.turquoise caption a:hover {
+	color:rgb(218,238,243);
+}
+table.black caption a:hover {
+	color:lightgray;
+}
+table.orange caption a:hover {
+	color:rgb(253,253,217);
+}

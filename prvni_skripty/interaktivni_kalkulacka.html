@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple web calculator</title>
+    </head>
+
+    <body>
+        <h1>Simple web calculator</h1>
+        <input type="text" id="number1" size="5" /> + <input type="text" id="number2" size="5" />
+        <button id="button">Add!</button>
+        <script type="text/javascript">
+            // This is where we will write our code
+            let elementButton = document.getElementById("button");
+            let elementNumber1 = document.getElementById("number1");
+            let elementNumber2 = document.getElementById("number2");
+
+            function add() {
+                let number1 = parseFloat(elementNumber1.value);
+                let number2 = parseFloat(elementNumber2.value);
+
+                alert(number1 + number2);
+            }
+
+            elementButton.addEventListener("click", add);
+            
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvadratická Rovnice</title>
+</head>
+<body>
+    <h1>Kvadratická Rovnice</h1>
+    <div style="text-align: center;">
+    <script>
+        let a = parseInt(prompt("Gradually enter the a,b,and c coefficients for the quadratic equation ax2+bx+c=0. Now enter the coefficient a:"));
+        let b = parseInt(prompt("Gradually enter the a,b,and c coefficients for the quadratic equation ax2+bx+c=0. Now enter the coefficient b:"));
+        let c = parseInt(prompt("Gradually enter the a,b,and c coefficients for the quadratic equation ax2+bx+c=0. Now enter the coefficient c:"));
+        let D = b*b-4*a*c;
+        if (D > 0) {
+            let x1 = (-b + Math.sqrt(D)) / (2*a);
+            let x2 = (-b - Math.sqrt(D)) / (2*a);
+            document.write("The equation has two real roots: x1 = " + x1 + ", x2 = " + x2);
+        } else if (D == 0) {
+            let x = -b / (2*a);
+            document.write("The equation has one real root: x = " + x);
+        } else {
+            document.write("The equation has no real roots.");
+        }
+    </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit and vegetable recognizer</title>
+</head>
+<body>
+    <h1>Fruit and vegetable recognizer</h1>
+    <img src="img/limeta.png" alt="limeta" width="120" height="120">
+    <script>
+        let fruits = ["apple", "banana", "orange", "grape", "kiwi", "lemon", "lime", "watermelon"];
+        let vegetables = ["carrot", "broccoli", "spinach", "potato", "tomato", "cucumber", "pepper", "onion"];
+		let crop = prompt("Enter a crop name: ").trim().toLowerCase();
+
+		let found = false;
+		// Tries to search in fruits
+		for (let i = 0; i < fruits.length; i++) {
+			if (fruits[i] == crop) {
+				document.write(crop + " is a fruit");
+				found = true;
+			}
+		}
+		// If no luck in fruits, let's take a look in vegetables
+		if (!found) {
+			for (let i = 0; i < vegetables.length; i++) {
+				if (vegetables[i] == crop) {
+					document.write(crop + " is a vegetable");
+					found = true;
+				}
+			}
+		}
+		// Still nothing found
+		if (!found)
+			document.write("I don't have your crop in my list");
+    </script>
+</body>
+</html>

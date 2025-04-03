@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+    <head>
+        <meta charset="utf-8">
+        <title>Kalkulačka v JavaScriptu</title>
+    </head>
+
+    <body>
+        <script>
+            let proceed = true;
+            while (proceed) {
+                let a = 9;
+                let b = 3;
+                let example = "";
+
+                let choice = parseInt(prompt("Choose an operation:\n1 - addition\n2 - subtraction\n3 - multiplication\n4 - division"));
+
+                switch (choice) {
+                    case 1:
+                        example = `${a} + ${b} = ${a + b}`;
+                        break;
+                    case 2:
+                        example = `${a} - ${b} = ${a - b}`;
+                        break;
+                    case 3:
+                        example = `${a} * ${b} = ${a * b}`;
+                        break;
+                    case 4:
+                        example = `${a} / ${b} = ${a / b}`;
+                        break;
+                    default:
+                        example = "Invalid input";
+                }
+
+                proceed = confirm(example + "\nDo you wish to continue?");
+                document.write(example + "<br>");
+
+            }
+            document.write("Thank you for using the calculator.");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum slovy</title>
+</head>
+<body>
+    <script>
+        let datum = new Date(); // Opraveno z "new Data" na "new Date()"
+
+        function datumSlovy(datum) {
+            let mesice = ["leden", "únor", "březen", "duben", "květen", "červen", "červenec", "srpen", "září", "říjen", "listopad", "prosinec"];
+            document.write("Dnes je: " + datum.getDate() + ". " + mesice[datum.getMonth()] + " " + datum.getFullYear());
+        }
+
+        datumSlovy(datum);
+    </script>
+</body>
+</html>

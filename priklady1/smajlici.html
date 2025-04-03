@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley</title>
+</head>
+<body>
+    <h1>Smiley</h1>
+    <div style="text-align: center">
+    <script>
+        let smiley = prompt("Enter smiley: ");
+        let upravenySmiley = smiley.replace("-", "").trim().toLowerCase();
+        switch (upravenySmiley) {
+            case ":)":
+                document.write("Your smiley is happy.");
+                break;
+            case ":(":
+                document.write("Your smiley is sad.");
+                break;
+            case ":*":
+                document.write("Your smiley is kiss.");
+                break;
+            case ":P":
+                document.write("Your smiley is tongue.");
+                break;    
+            default:
+                document.write("Unknown smiley.");
+        }
+    </script>
+    </div>
+</body>
+</html>

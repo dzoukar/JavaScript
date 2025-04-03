@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šachovnice</title>
+</head>
+<body>
+    <script>
+        document.write('<table border="1">');
+        for (let i = 0; i < 8; i++) {
+            document.write("<tr>");
+            for (let j = 0; j < 8; j++) {
+                let style;
+                if ((i + j) % 2 == 0) {
+                    style = 'style="background: black;';                    
+                } else {
+                    style = '';
+                }
+                document.write('<td ' + style + ' width: 24px; height: 24px; color: white;" ></td>');    
+            }
+            document.write("</tr>");
+        }
+    </script>
+</body>
+</html>

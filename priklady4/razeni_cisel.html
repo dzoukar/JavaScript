@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cz-cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum slovy</title>
+</head>
+<body>
+    <script>
+        let numbers = [15, 8, 12, 16, 4, 1, 5, 14];
+        function sorter(numbers) {
+            numbers.sort(function(a, b) { return b - a });
+            return (numbers[0] + numbers[1] + numbers[2]);
+        }
+        document.write("Pole čísel: <br />");
+        document.write("<ul>");
+        for (const number of numbers) {
+            document.write("<li>" + number + "</li>");
+        }
+        document.write('</ul>');
+		document.write('Součet největších 3 čísel: ' + sorter(numbers));
+    </script>
+</body>
+</html>
